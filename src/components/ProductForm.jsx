@@ -15,14 +15,14 @@ const ProductForm = ({ newProductName, newSetProductName }) => {
 
   return (
     <div>
-      <h1>Product Form</h1>
+      <h1>New Client Form</h1>
 
       <form className="formCss" onSubmit={submitHandler}>
         <div className="items">
-          <label htmlFor="productName">Product Name</label>
+          <label htmlFor="ClientName">Please enter your name:</label>
           <input
             type="text"
-            name="productName"
+            name="name"
             value={newProductName} 
             onChange={(e) => {
               newSetProductName(e.target.value);
@@ -30,11 +30,11 @@ const ProductForm = ({ newProductName, newSetProductName }) => {
           />
         </div>
 
-        <div className="items">
-          <label htmlFor="description">Product Description</label>
+        <div className="email">
+          <label htmlFor="description">Please enter your email:</label>
           <textarea
-            name="description"
-            id="description" 
+            name="email"
+            id="email" 
             value={description} 
             onChange={inputHandler}
           ></textarea>
@@ -44,8 +44,8 @@ const ProductForm = ({ newProductName, newSetProductName }) => {
 
         
         <div className="debug-output">
-          <p>Current Product Name: {newProductName}</p>
-          <p>Current Description: {description}</p>
+          <p>Entred Name: {newProductName}</p>
+          <p>Entered Description: {description}</p>
         </div>
       </form>
     </div>
