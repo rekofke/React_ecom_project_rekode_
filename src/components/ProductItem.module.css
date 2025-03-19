@@ -1,0 +1,9 @@
+
+.productDetail {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: aqua;
+    color: black;
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 15px;
+}
